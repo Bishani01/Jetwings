@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{55788552-4400-4AC6-8112-C1D231FAB21D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Jetwings</RootNamespace>
+    <AssemblyName>Jetwings</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.2.1\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MailKit, Version=4.3.0.0, Culture=neutral, PublicKeyToken=4e064fe7c44a8f1b, processorArchitecture=MSIL">
+      <HintPath>..\packages\MailKit.4.3.0\lib\net47\MailKit.dll</HintPath>
+    </Reference>
+    <Reference Include="MimeKit, Version=4.3.0.0, Culture=neutral, PublicKeyToken=bede1c8a46c66814, processorArchitecture=MSIL">
+      <HintPath>..\packages\MimeKit.4.3.0\lib\net47\MimeKit.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Formats.Asn1, Version=7.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Formats.Asn1.7.0.0\lib\net462\System.Formats.Asn1.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.2, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.5\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.6.0.0\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About Us.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About Us.Designer.cs">
+      <DependentUpon>About Us.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.Designer.cs">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_login.Designer.cs">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking.Designer.cs">
+      <DependentUpon>booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="colombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="colombo.Designer.cs">
+      <DependentUpon>colombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColomboPackages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColomboPackages.Designer.cs">
+      <DependentUpon>ColomboPackages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Contact.Designer.cs">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dambulla.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dambulla.Designer.cs">
+      <DependentUpon>Dambulla.cs</DependentUpon>
+    </Compile>
+    <Compile Include="db.cs" />
+    <Compile Include="DeleteProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProfile.Designer.cs">
+      <DependentUpon>DeleteProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="editprofile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="editprofile.Designer.cs">
+      <DependentUpon>editprofile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EmailService.cs" />
+    <Compile Include="Get.cs" />
+    <Compile Include="GetUserName.cs" />
+    <Compile Include="home1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home1.Designer.cs">
+      <DependentUpon>home1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="hotels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hotels.Designer.cs">
+      <DependentUpon>hotels.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Jafna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Jafna.Designer.cs">
+      <DependentUpon>Jafna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kandy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kandy.Designer.cs">
+      <DependentUpon>kandy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginNew.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginNew.Designer.cs">
+      <DependentUpon>LoginNew.cs</DependentUpon>
+    </Compile>
+    <Compile Include="negombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="negombo.Designer.cs">
+      <DependentUpon>negombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OngoinhAndHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OngoinhAndHistory.Designer.cs">
+      <DependentUpon>OngoinhAndHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PackagesColombo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PackagesColombo.Designer.cs">
+      <DependentUpon>PackagesColombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Profile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Profile.Designer.cs">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sigiriya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sigiriya.Designer.cs">
+      <DependentUpon>Sigiriya.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.cs">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splashscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splashscreen.Designer.cs">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include=".cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User controls\package 01.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User controls\package 01.Designer.cs">
+      <DependentUpon>package 01.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User controls\package 02.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User controls\package 02.Designer.cs">
+      <DependentUpon>package 02.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlPackages\US_colombo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlPackages\US_colombo.Designer.cs">
+      <DependentUpon>US_colombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verifyOTP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verifyOTP.Designer.cs">
+      <DependentUpon>verifyOTP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="yala.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="yala.Designer.cs">
+      <DependentUpon>yala.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About Us.resx">
+      <DependentUpon>About Us.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminDashboard.resx">
+      <DependentUpon>AdminDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_login.resx">
+      <DependentUpon>Admin_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booking.resx">
+      <DependentUpon>booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="colombo.resx">
+      <DependentUpon>colombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColomboPackages.resx">
+      <DependentUpon>ColomboPackages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Contact.resx">
+      <DependentUpon>Contact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dambulla.resx">
+      <DependentUpon>Dambulla.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="editprofile.resx">
+      <DependentUpon>editprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home1.resx">
+      <DependentUpon>home1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="hotels.resx">
+      <DependentUpon>hotels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Jafna.resx">
+      <DependentUpon>Jafna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kandy.resx">
+      <DependentUpon>kandy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginNew.resx">
+      <DependentUpon>LoginNew.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="negombo.resx">
+      <DependentUpon>negombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OngoinhAndHistory.resx">
+      <DependentUpon>OngoinhAndHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PackagesColombo.resx">
+      <DependentUpon>PackagesColombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Profile.resx">
+      <DependentUpon>Profile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sigiriya.resx">
+      <DependentUpon>Sigiriya.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splashscreen.resx">
+      <DependentUpon>Splashscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="User controls\package 01.resx">
+      <DependentUpon>package 01.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User controls\package 02.resx">
+      <DependentUpon>package 02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlPackages\US_colombo.resx">
+      <DependentUpon>US_colombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verifyOTP.resx">
+      <DependentUpon>verifyOTP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="yala.resx">
+      <DependentUpon>yala.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2023-09-16 171251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetwing-yala.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashpage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashpage1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashpage2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetwinjpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetwinjpg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-negombo-categorythumbnail.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\splashpage3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetwinjpg2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualsofdana-T5pL6ciEn-I-unsplash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetwinlogoblack.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetwinlogoblack1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jetwinlogoblack2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resevation.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
