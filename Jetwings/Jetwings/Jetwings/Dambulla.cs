@@ -12,9 +12,11 @@ namespace Jetwings
 {
     public partial class Dambulla : Form
     {
-        public Dambulla()
+        private int id;
+        public Dambulla(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -34,14 +36,14 @@ namespace Jetwings
 
         private void btn_BackToHome_Click(object sender, EventArgs e)
         {
-            home1 Home = new home1();
+            home1 Home = new home1(id);
             this.Hide();
             Home.Show();
         }
 
         private void btn_BookNow_Click(object sender, EventArgs e)
         {
-            booking book = new booking();
+            booking book = new booking(id);
             this.Hide();
             book.Show();
         }

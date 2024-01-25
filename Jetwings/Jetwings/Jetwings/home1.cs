@@ -2,19 +2,45 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static db;
 
 namespace Jetwings
 {
     public partial class home1 : Form
     {
-        public home1()
+        private int id;
+        public home1(int id)
         {
             InitializeComponent();
+            this.id = id;
+            getName(id);
+
+        }
+
+        public void getName(int id)
+        {
+            SqlConnection con = dbConnection.GetSqlConnection();
+
+            SqlCommand cmd = new SqlCommand("SELECT Cust_FName FROM CustomerTable WHERE Cust_ID = '" + id + "' ", con);
+
+            con.Open();
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            if (dt.Rows.Count > 0)
+            {
+
+                label3.Text = dt.Rows[0]["Cust_FName"].ToString();
+            }
+
+
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,21 +55,21 @@ namespace Jetwings
 
         private void btn_bookNow_Click(object sender, EventArgs e)
         {
-            booking book = new booking();
+            booking book = new booking(id);
             this.Hide();
             book.Show();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            colombo Colombo = new colombo();
+            colombo Colombo = new colombo(id);
             this.Hide();
             Colombo.Show();
         }
 
         private void btn_moreHotels_Click(object sender, EventArgs e)
         {
-            hotels Hotels = new hotels();
+            hotels Hotels = new hotels(id);
             this.Hide();
             Hotels.Show();
         }
@@ -60,11 +86,16 @@ namespace Jetwings
 
         }
 
-        private void btn_verify_Click(object sender, EventArgs e)
+        private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            verifyOTP verifyOTP = new verifyOTP();
-            verifyOTP.Show();
+            Report r = new Report(id);
+            r.Show();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -12,9 +12,11 @@ namespace Jetwings
 {
     public partial class Jafna : Form
     {
-        public Jafna()
+        private int id;
+        public Jafna(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -29,14 +31,14 @@ namespace Jetwings
 
         private void btn_BackToHome_Click(object sender, EventArgs e)
         {
-            home1 Home = new home1();
+            home1 Home = new home1(id);
             this.Hide();
             Home.Show();
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            booking book = new booking();
+            booking book = new booking(id);
             this.Hide();
             book.Show();
         }

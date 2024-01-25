@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Reporting.WinForms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,15 +15,20 @@ namespace Jetwings
 {
     public partial class booking : Form
     {
-        public booking()
+        private int userID;
+        private string userEmail;
+        public booking(int id)
         {
             InitializeComponent();
+            this.userID = id;
+            userEmail = Get.email;
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+        
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -31,7 +37,7 @@ namespace Jetwings
 
         private void btn_backtoHome_Click(object sender, EventArgs e)
         {
-            home1 Home = new home1();
+            home1 Home = new home1(userID);
             this.Hide();
             Home.Show();
         }
@@ -730,50 +736,57 @@ namespace Jetwings
                     }
 
                 }
-                else
-                {
-                    try
-                    {
-                        using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-JSOA6DH;Initial Catalog=jetwings;Integrated Security=True;Encrypt=False"))
-                        {
-                            con.Open();
-
-                            // Assuming you have the required data for database insertion
-                            string bookBranch = cmb_HotelBranch.Text;
-                            string bookPackage = cmb_package.Text;
-                            DateTime checkInDate = dob_DateIn.Value;
-                            DateTime checkOutDate = dob_DateOut.Value;
-                            int adults = Convert.ToInt32(txt_Adults.Text);
-                            int children = Convert.ToInt32(txt_Child.Text);
-
-                            // Calculate the total count of adults and children
-                            int totalPerson = adults + children;
-
-                            SqlCommand cmd = new SqlCommand("INSERT INTO BookingDetails (Book_Branch, Book_Packages, Book_TotalPerson, Book_DateIn, Book_DateOut) " +
-                                                            "VALUES (@BookBranch, @BookPackage, @TotalPerson, @CheckInDate, @CheckOutDate)", con);
-
-                            cmd.Parameters.AddWithValue("@BookBranch", bookBranch);
-                            cmd.Parameters.AddWithValue("@BookPackage", bookPackage);
-                            cmd.Parameters.AddWithValue("@TotalPerson", totalPerson);
-                            cmd.Parameters.AddWithValue("@CheckInDate", checkInDate);
-                            cmd.Parameters.AddWithValue("@CheckOutDate", checkOutDate);
-
-                            cmd.ExecuteNonQuery();
-
-                            MessageBox.Show("Booking details inserted successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            home1 Home = new home1();
-                            Home.Show();
-                            this.Hide();
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show($"Error inserting booking details: {ex.Message}", "Error");
-                    }
-                }
+               
 
             }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+             
+            
+                
+                    using (SqlConnection con = new SqlConnection("Data Source=DESKTOP-JSOA6DH;Initial Catalog=jetwings;Integrated Security=True;Encrypt=False"))
+                    {
+                        con.Open();
+
+                        // Assuming you have the required data for database insertion
+                        string bookBranch = cmb_HotelBranch.Text;
+                        string bookPackage = cmb_package.Text;
+                        DateTime checkInDate = dob_DateIn.Value;
+                        DateTime checkOutDate = dob_DateOut.Value;
+                        int adults = Convert.ToInt32(txt_Adults.Text);
+                        int children = Convert.ToInt32(txt_Child.Text);
+                    
+
+                        // Calculate the total count of adults and children
+                        int totalPerson = adults + children;
+
+                        SqlCommand cmd = new SqlCommand("INSERT INTO BookingDetails (Book_Branch, Book_Packages, Book_TotalPerson, Book_DateIn, Book_DateOut,Amount, Cust_ID) " +
+                                                        "VALUES (@BookBranch, @BookPackage, @TotalPerson, @CheckInDate, @CheckOutDate,'"+label_Total.Text+"','"+userID+ "') SELECT SCOPE_IDENTITY()", con);
+
+                        cmd.Parameters.AddWithValue("@BookBranch", bookBranch);
+                        cmd.Parameters.AddWithValue("@BookPackage", bookPackage);
+                        cmd.Parameters.AddWithValue("@TotalPerson", totalPerson);
+                        cmd.Parameters.AddWithValue("@CheckInDate", checkInDate);
+                        cmd.Parameters.AddWithValue("@CheckOutDate", checkOutDate);
+
+                        int booking_id = Convert.ToInt32(cmd.ExecuteScalar());
+
+
+                        
+
+                   
+
+                        MessageBox.Show("Booking successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    Bill bill = new Bill(booking_id, userID,userEmail);
+                    bill.Show();
+
+                    
+                }
+               
+            
         }
+    }
     }
 

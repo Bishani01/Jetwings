@@ -12,7 +12,8 @@ namespace Jetwings
 {
     public partial class colombo : Form
     {
-        public colombo()
+        private int id;
+        public colombo(int id)
         {
             InitializeComponent();
         }
@@ -29,14 +30,14 @@ namespace Jetwings
 
         private void btn_BackToHome_Click(object sender, EventArgs e)
         {
-            home1 Home = new home1();
+            home1 Home = new home1(id);
             this.Hide();
             Home.Show();
         }
 
         private void btn_BookNow_Click(object sender, EventArgs e)
         {
-            booking book = new booking();
+            booking book = new booking(id);
             this.Hide();
             book.Show();
         }

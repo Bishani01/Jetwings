@@ -66,7 +66,8 @@ namespace Jetwings
 
                 if (dt.Rows.Count != 0)
                 {
-                    home1 Home = new home1();
+                    int cusid = Convert.ToInt32(dt.Rows[0]["Cust_ID"]);
+                    home1 Home = new home1(cusid);
                     Get.email = txt_UserName.Text;//Text Box eke design name eka meh thiyenne.
                     this.Hide();
                     Home.Show();
