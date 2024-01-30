@@ -42,5 +42,42 @@ namespace Jetwings
             this.Hide();
             book.Show();
         }
+
+        private void linkLabel_seePackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            YalaPackages Yala  = new YalaPackages();
+            this.Hide();
+            Yala.Show();
+        }
+
+        private void yala_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btn_login_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

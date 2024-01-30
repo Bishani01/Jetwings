@@ -138,11 +138,11 @@
     <Compile Include="colombo.Designer.cs">
       <DependentUpon>colombo.cs</DependentUpon>
     </Compile>
-    <Compile Include="ColomboPackages.cs">
+    <Compile Include="ColomboPackage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ColomboPackages.Designer.cs">
-      <DependentUpon>ColomboPackages.cs</DependentUpon>
+    <Compile Include="ColomboPackage.Designer.cs">
+      <DependentUpon>ColomboPackage.cs</DependentUpon>
     </Compile>
     <Compile Include="Contact.cs">
       <SubType>Form</SubType>
@@ -156,6 +156,12 @@
     <Compile Include="Dambulla.Designer.cs">
       <DependentUpon>Dambulla.cs</DependentUpon>
     </Compile>
+    <Compile Include="DambullaPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DambullaPackage.Designer.cs">
+      <DependentUpon>DambullaPackage.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet1.cs">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
@@ -165,11 +171,11 @@
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </Compile>
     <Compile Include="db.cs" />
-    <Compile Include="DeleteProfile.cs">
+    <Compile Include="EditPassword.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeleteProfile.Designer.cs">
-      <DependentUpon>DeleteProfile.cs</DependentUpon>
+    <Compile Include="EditPassword.Designer.cs">
+      <DependentUpon>EditPassword.cs</DependentUpon>
     </Compile>
     <Compile Include="editprofile.cs">
       <SubType>Form</SubType>
@@ -178,6 +184,36 @@
       <DependentUpon>editprofile.cs</DependentUpon>
     </Compile>
     <Compile Include="EmailService.cs" />
+    <Compile Include="JaffnaPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JaffnaPackage.Designer.cs">
+      <DependentUpon>JaffnaPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KandyPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KandyPackage.Designer.cs">
+      <DependentUpon>KandyPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NegamboPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NegamboPackage.Designer.cs">
+      <DependentUpon>NegamboPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SigiriyaPackagecs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SigiriyaPackagecs.Designer.cs">
+      <DependentUpon>SigiriyaPackagecs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YalaPackages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YalaPackages.Designer.cs">
+      <DependentUpon>YalaPackages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Report.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,12 +263,6 @@
     </Compile>
     <Compile Include="OngoinhAndHistory.Designer.cs">
       <DependentUpon>OngoinhAndHistory.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PackagesColombo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PackagesColombo.Designer.cs">
-      <DependentUpon>PackagesColombo.cs</DependentUpon>
     </Compile>
     <Compile Include="Profile.cs">
       <SubType>Form</SubType>
@@ -304,8 +334,8 @@
     <EmbeddedResource Include="colombo.resx">
       <DependentUpon>colombo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ColomboPackages.resx">
-      <DependentUpon>ColomboPackages.cs</DependentUpon>
+    <EmbeddedResource Include="ColomboPackage.resx">
+      <DependentUpon>ColomboPackage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Contact.resx">
       <DependentUpon>Contact.cs</DependentUpon>
@@ -313,8 +343,29 @@
     <EmbeddedResource Include="Dambulla.resx">
       <DependentUpon>Dambulla.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DambullaPackage.resx">
+      <DependentUpon>DambullaPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPassword.resx">
+      <DependentUpon>EditPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editprofile.resx">
       <DependentUpon>editprofile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JaffnaPackage.resx">
+      <DependentUpon>JaffnaPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KandyPackage.resx">
+      <DependentUpon>KandyPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NegamboPackage.resx">
+      <DependentUpon>NegamboPackage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SigiriyaPackagecs.resx">
+      <DependentUpon>SigiriyaPackagecs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YalaPackages.resx">
+      <DependentUpon>YalaPackages.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Report.resx">
       <DependentUpon>Report.cs</DependentUpon>
@@ -339,9 +390,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="OngoinhAndHistory.resx">
       <DependentUpon>OngoinhAndHistory.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PackagesColombo.resx">
-      <DependentUpon>PackagesColombo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Profile.resx">
       <DependentUpon>Profile.cs</DependentUpon>
@@ -455,6 +503,7 @@
     <None Include="Resources\resevation.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\5528149.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

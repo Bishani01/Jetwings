@@ -374,6 +374,7 @@
             this.Controls.Add(this.cmb_HotelBranch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "booking";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "booking";
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

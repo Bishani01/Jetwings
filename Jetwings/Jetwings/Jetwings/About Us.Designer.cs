@@ -89,6 +89,7 @@
             this.button2.TabIndex = 11;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -101,6 +102,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -125,6 +127,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "About_Us";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "About_Us";
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);

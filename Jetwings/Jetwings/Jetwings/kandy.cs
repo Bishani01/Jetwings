@@ -42,5 +42,12 @@ namespace Jetwings
             this.Hide();
             book.Show();
         }
+
+        private void linkLabel_KandyPackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            KandyPackage kandy = new KandyPackage();
+            this.Hide();
+            kandy.Show();
+        }
     }
 }

@@ -33,7 +33,6 @@
             this.btn_edit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
             this.btn_delete = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_history = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbl_LastName = new System.Windows.Forms.Label();
@@ -61,7 +60,6 @@
             this.panel1.Controls.Add(this.btn_edit);
             this.panel1.Controls.Add(this.guna2Button5);
             this.panel1.Controls.Add(this.btn_delete);
-            this.panel1.Controls.Add(this.btn_history);
             this.panel1.Controls.Add(this.guna2Button1);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -79,7 +77,7 @@
             this.btn_edit.FillColor = System.Drawing.Color.LavenderBlush;
             this.btn_edit.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_edit.ForeColor = System.Drawing.Color.Black;
-            this.btn_edit.Location = new System.Drawing.Point(71, 459);
+            this.btn_edit.Location = new System.Drawing.Point(69, 415);
             this.btn_edit.Name = "btn_edit";
             this.btn_edit.Size = new System.Drawing.Size(180, 45);
             this.btn_edit.TabIndex = 60;
@@ -115,22 +113,6 @@
             this.btn_delete.TabIndex = 58;
             this.btn_delete.Text = "DELETE PROFILE";
             this.btn_delete.Click += new System.EventHandler(this.btn_delete_Click_1);
-            // 
-            // btn_history
-            // 
-            this.btn_history.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_history.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_history.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_history.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_history.FillColor = System.Drawing.Color.LavenderBlush;
-            this.btn_history.Font = new System.Drawing.Font("Poppins Medium", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_history.ForeColor = System.Drawing.Color.Black;
-            this.btn_history.Location = new System.Drawing.Point(72, 393);
-            this.btn_history.Name = "btn_history";
-            this.btn_history.Size = new System.Drawing.Size(180, 45);
-            this.btn_history.TabIndex = 56;
-            this.btn_history.Text = " HISTORY";
-            this.btn_history.Click += new System.EventHandler(this.btn_history_Click);
             // 
             // guna2Button1
             // 
@@ -212,7 +194,7 @@
             this.button1.BackColor = System.Drawing.Color.Red;
             this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1144, 7);
+            this.button1.Location = new System.Drawing.Point(1227, 7);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(44, 30);
             this.button1.TabIndex = 6;
@@ -225,7 +207,7 @@
             this.button2.BackColor = System.Drawing.Color.Navy;
             this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1102, 7);
+            this.button2.Location = new System.Drawing.Point(1185, 7);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(44, 30);
             this.button2.TabIndex = 7;
@@ -349,6 +331,7 @@
             this.Controls.Add(this.lbl_Gender);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Profile";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Profile";
             this.Load += new System.EventHandler(this.Profile_Load);
             this.panel1.ResumeLayout(false);
@@ -362,7 +345,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btn_delete;
-        private Guna.UI2.WinForms.Guna2Button btn_history;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label lbl_LastName;
         private System.Windows.Forms.Label lbl_Gender;

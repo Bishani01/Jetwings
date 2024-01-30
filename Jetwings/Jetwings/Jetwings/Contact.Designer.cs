@@ -30,11 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Contact));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,6 +47,15 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(288, 523);
             this.guna2Panel1.TabIndex = 2;
+            // 
+            // panel3
+            // 
+            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel3.Location = new System.Drawing.Point(42, -49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 200);
+            this.panel3.TabIndex = 19;
             // 
             // label1
             // 
@@ -91,15 +100,7 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
-            // 
-            // panel3
-            // 
-            this.panel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel3.BackgroundImage")));
-            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(42, -49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 200);
-            this.panel3.TabIndex = 19;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Contact
             // 

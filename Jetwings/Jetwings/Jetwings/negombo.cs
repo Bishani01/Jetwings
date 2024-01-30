@@ -42,5 +42,17 @@ namespace Jetwings
             this.Hide();
             book.Show();
         }
+
+        private void linkLabel_seePackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
+
+        private void linkLabel_negamboPackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            NegamboPackage negambo = new NegamboPackage();
+            this.Hide();
+            negambo.Show();
+        }
     }
 }

@@ -47,7 +47,7 @@ namespace Jetwings
             
             
 
-                if (cmb_package.SelectedIndex == 0)
+                if (cmb_HotelBranch.SelectedIndex == 0)
                 {
 
                     // Maximum guests for each package
@@ -134,7 +134,7 @@ namespace Jetwings
                     }
 
                 }
-                else if (cmb_package.SelectedIndex == 1)
+                else if (cmb_HotelBranch.SelectedIndex == 1)
                 {
 
                     // Maximum guests for each package
@@ -220,7 +220,7 @@ namespace Jetwings
                     }
 
                 }
-                if (cmb_package.SelectedIndex == 2)
+                if (cmb_HotelBranch.SelectedIndex == 2)
                 {
 
                     // Maximum guests for each package
@@ -306,7 +306,7 @@ namespace Jetwings
                     }
 
                 }
-                if (cmb_package.SelectedIndex == 3)
+                if (cmb_HotelBranch.SelectedIndex == 3)
                 {
 
                     // Maximum guests for each package
@@ -392,7 +392,7 @@ namespace Jetwings
                     }
 
                 }
-                if (cmb_package.SelectedIndex == 4)
+                if (cmb_HotelBranch.SelectedIndex == 4)
                 {
 
                     // Maximum guests for each package
@@ -478,7 +478,7 @@ namespace Jetwings
                     }
 
                 }
-                if (cmb_package.SelectedIndex == 5)
+                if (cmb_HotelBranch.SelectedIndex == 5)
                 {
 
                     // Maximum guests for each package
@@ -564,7 +564,7 @@ namespace Jetwings
                     }
 
                 }
-                if (cmb_package.SelectedIndex == 5)
+                if (cmb_HotelBranch.SelectedIndex == 5)
                 {
 
                     // Maximum guests for each package
@@ -650,7 +650,7 @@ namespace Jetwings
                     }
 
                 }
-                if (cmb_package.SelectedIndex == 6)
+                if (cmb_HotelBranch.SelectedIndex == 6)
                 {
 
                     // Maximum guests for each package

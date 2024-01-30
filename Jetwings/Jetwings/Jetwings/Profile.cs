@@ -18,11 +18,13 @@ namespace Jetwings
     {
 
         private string userEmail;
-        public Profile()
+        private int id;
+        public Profile(int id)
         {
             InitializeComponent();
             this.userEmail = Get.email;
             Profile_Load(this, EventArgs.Empty);
+            this.id = id;
 
         }
         
@@ -35,17 +37,9 @@ namespace Jetwings
             ongoing.Show();
         }
 
-        private void btn_edit_Click(object sender, EventArgs e)
-        {
-            editprofile Edit = new editprofile();
-            this.Hide();
-            Edit.Show();
-        }
+        
 
-        private void btn_delete_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -58,7 +52,9 @@ namespace Jetwings
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-
+           home1 home  = new home1(id);
+            this.Hide();
+            home.Show();
         }
 
         private void Profile_Load(object sender, EventArgs e)
@@ -167,7 +163,10 @@ namespace Jetwings
 
         private void btn_edit_Click_1(object sender, EventArgs e)
         {
-             
+            editprofile Edit = new editprofile(id);
+            this.Hide();
+            Edit.Show();
+
         }
     }
  }

@@ -20,7 +20,7 @@ namespace Jetwings
         private int id;
         private int bookinid;
         private string userEmail;
-        string pdfFilePath = @"C:\Users\Bishani Ushara\Documents\dulanjana\new\Jetwings\Temp\BookingReport.pdf";
+        string pdfFilePath = @"C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Temp\BookingReport.pdf";
         public Bill(int bookingid,int id,string email)
         {
             InitializeComponent();
@@ -44,7 +44,7 @@ namespace Jetwings
 
             reportViewer1.LocalReport.DataSources.Clear();
             ReportDataSource ds = new ReportDataSource("DataSet1", dt);
-            reportViewer1.LocalReport.ReportPath = @"C:\Users\Bishani Ushara\Documents\dulanjana\new\Jetwings\Jetwings\Jetwings\BookingReport.rdlc";
+            reportViewer1.LocalReport.ReportPath = @"C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\Bill.rdlc";
             reportViewer1.LocalReport.DataSources.Add(ds);
             reportViewer1.RefreshReport();
 
@@ -73,6 +73,12 @@ namespace Jetwings
         {
 
             this.reportViewer1.RefreshReport();
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            
+            this.Close();
         }
     }
 }

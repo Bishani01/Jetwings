@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginNew));
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.linkLabel_forgetPw = new System.Windows.Forms.LinkLabel();
             this.btn_signUp = new Guna.UI2.WinForms.Guna2Button();
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.label5 = new System.Windows.Forms.Label();
@@ -58,16 +57,6 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Login here";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // linkLabel_forgetPw
-            // 
-            this.linkLabel_forgetPw.AutoSize = true;
-            this.linkLabel_forgetPw.Location = new System.Drawing.Point(1031, 598);
-            this.linkLabel_forgetPw.Name = "linkLabel_forgetPw";
-            this.linkLabel_forgetPw.Size = new System.Drawing.Size(109, 16);
-            this.linkLabel_forgetPw.TabIndex = 21;
-            this.linkLabel_forgetPw.TabStop = true;
-            this.linkLabel_forgetPw.Text = "Forget Password";
             // 
             // btn_signUp
             // 
@@ -253,7 +242,6 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.chk_remember);
             this.Controls.Add(this.linkLabel1);
-            this.Controls.Add(this.linkLabel_forgetPw);
             this.Controls.Add(this.btn_signUp);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.label5);
@@ -265,6 +253,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "LoginNew";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginNew";
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -275,7 +264,6 @@
         #endregion
 
         private System.Windows.Forms.LinkLabel linkLabel1;
-        private System.Windows.Forms.LinkLabel linkLabel_forgetPw;
         private Guna.UI2.WinForms.Guna2Button btn_signUp;
         private Guna.UI2.WinForms.Guna2Button btn_login;
         private System.Windows.Forms.Label label5;

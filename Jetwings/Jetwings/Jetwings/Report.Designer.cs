@@ -75,15 +75,18 @@
             this.guna2Button1.Text = "Home";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // Form1
+            // Report
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(946, 1053);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.btn_login);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "Form1";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Report";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);

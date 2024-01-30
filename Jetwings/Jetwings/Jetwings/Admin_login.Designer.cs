@@ -215,6 +215,7 @@
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Admin_login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Admin_login";
             this.Load += new System.EventHandler(this.Admin_login_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

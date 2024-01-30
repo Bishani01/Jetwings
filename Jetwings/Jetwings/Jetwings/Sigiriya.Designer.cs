@@ -34,14 +34,15 @@
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel_VilPackages = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // btn_backToHome
@@ -88,7 +89,7 @@
             this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(250, 609);
+            this.btn_login.Location = new System.Drawing.Point(251, 628);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(233, 52);
             this.btn_login.TabIndex = 82;
@@ -114,6 +115,32 @@
             this.label1.Size = new System.Drawing.Size(410, 70);
             this.label1.TabIndex = 76;
             this.label1.Text = "JETWING VIL UYANA";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Navy;
+            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1196, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 30);
+            this.button2.TabIndex = 87;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1241, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 30);
+            this.button1.TabIndex = 86;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel7
             // 
@@ -155,9 +182,9 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(728, 318);
+            this.panel2.Location = new System.Drawing.Point(728, 231);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(400, 400);
+            this.panel2.Size = new System.Drawing.Size(503, 487);
             this.panel2.TabIndex = 78;
             // 
             // panel1
@@ -169,31 +196,17 @@
             this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 75;
             // 
-            // button2
+            // linkLabel_VilPackages
             // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1120, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 30);
-            this.button2.TabIndex = 87;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1165, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 30);
-            this.button1.TabIndex = 86;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.linkLabel_VilPackages.AutoSize = true;
+            this.linkLabel_VilPackages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_VilPackages.Location = new System.Drawing.Point(75, 576);
+            this.linkLabel_VilPackages.Name = "linkLabel_VilPackages";
+            this.linkLabel_VilPackages.Size = new System.Drawing.Size(140, 25);
+            this.linkLabel_VilPackages.TabIndex = 99;
+            this.linkLabel_VilPackages.TabStop = true;
+            this.linkLabel_VilPackages.Text = "See Packages";
+            this.linkLabel_VilPackages.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_VilPackages_LinkClicked);
             // 
             // Sigiriya
             // 
@@ -201,7 +214,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1235, 674);
+            this.ClientSize = new System.Drawing.Size(1316, 804);
+            this.Controls.Add(this.linkLabel_VilPackages);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel7);
@@ -217,6 +231,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Sigiriya";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sigiriya";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -238,5 +253,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel_VilPackages;
     }
 }

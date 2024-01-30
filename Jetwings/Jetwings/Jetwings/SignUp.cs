@@ -143,7 +143,7 @@ namespace Jetwings
 
             MailMessage mailMessage = new MailMessage("jetwingsbooking@outlook.com", userEmail);
             mailMessage.Subject = "Verification";
-            mailMessage.Body = $"<p>Dear Sir/Madam,</p><br><p>Your Otp is : {randomNumber} </p>";
+            mailMessage.Body = $"<p>Dear Sir/Madam,</p><br><p> Your OTP for email confirmation is : {randomNumber} </p>";
             mailMessage.IsBodyHtml = true;
             client.Send(mailMessage);
         }
@@ -174,7 +174,7 @@ namespace Jetwings
             }
             else
             {
-                MessageBox.Show("Failed.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("OTP is Incorrect.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

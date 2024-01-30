@@ -53,6 +53,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Pink</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -83,6 +84,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Pink</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -113,6 +115,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Pink</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -143,6 +146,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Pink</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -173,6 +177,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Pink</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -203,6 +208,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Pink</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -233,6 +239,7 @@
                           <Color>LightGrey</Color>
                           <Style>Solid</Style>
                         </Border>
+                        <BackgroundColor>Pink</BackgroundColor>
                         <PaddingLeft>2pt</PaddingLeft>
                         <PaddingRight>2pt</PaddingRight>
                         <PaddingTop>2pt</PaddingTop>
@@ -485,7 +492,7 @@
         <Top>0.24167in</Top>
         <Left>0.87286in</Left>
         <Height>0.5in</Height>
-        <Width>5.35833in</Width>
+        <Width>5.35836in</Width>
         <Style>
           <Border>
             <Style>None</Style>
@@ -514,7 +521,7 @@
             <Paragraph>
               <TextRuns>
                 <TextRun>
-                  <Value>User Booking details</Value>
+                  <Value>User Billing details</Value>
                   <Style>
                     <FontSize>24pt</FontSize>
                   </Style>
@@ -621,7 +628,7 @@
         <Border>
           <Style>None</Style>
         </Border>
-        <BackgroundColor>LightGoldenrodYellow</BackgroundColor>
+        <BackgroundColor>#804040</BackgroundColor>
       </Style>
     </PageHeader>
     <PageFooter>
@@ -663,7 +670,7 @@
         <Border>
           <Style>None</Style>
         </Border>
-        <BackgroundColor>LightGoldenrodYellow</BackgroundColor>
+        <BackgroundColor>#804040</BackgroundColor>
       </Style>
     </PageFooter>
     <LeftMargin>0.5in</LeftMargin>

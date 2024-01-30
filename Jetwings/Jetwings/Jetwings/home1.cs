@@ -76,7 +76,7 @@ namespace Jetwings
 
         private void profile_btn_click(object sender, EventArgs e)
         {
-            Profile profile = new Profile();
+            Profile profile = new Profile(id);
             this.Hide();
             profile.Show();
         }
@@ -96,6 +96,18 @@ namespace Jetwings
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
+        {
+           
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+            LoginNew loginNew = new LoginNew();
+            this.Close();
+            loginNew.Show();
         }
     }
 }

@@ -124,14 +124,17 @@
   <data name="jetwinlogoblack1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jetwinlogoblack1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="resevation" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resevation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="splashpage3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splashpage3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jetwinjpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jetwinjpg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="splashpage2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splashpage2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="visualsofdana-T5pL6ciEn-I-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\visualsofdana-T5pL6ciEn-I-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Screenshot 2023-09-16 171251" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Screenshot 2023-09-16 171251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,23 +145,23 @@
   <data name="splashpage1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splashpage1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="jetwing-yala" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jetwing-yala.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="splashpage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\splashpage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jetwinjpg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jetwinjpg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="jetwinlogoblack2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jetwinlogoblack2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="visualsofdana-T5pL6ciEn-I-unsplash" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\visualsofdana-T5pL6ciEn-I-unsplash.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="splash" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\splash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="jetwing-yala" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\jetwing-yala.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="jetwinjpg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jetwinjpg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="jetwinlogoblack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jetwinlogoblack.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,7 +169,7 @@
   <data name="admin" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\admin.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="resevation" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resevation.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="5528149" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5528149.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

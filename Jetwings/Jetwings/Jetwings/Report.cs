@@ -19,7 +19,7 @@ namespace Jetwings
     {
         private  int id;
         private string userEmail;
-        string pdfFilePath = @"C:\Users\Bishani Ushara\Documents\dulanjana\new\Jetwings\Temp\BookingReport.pdf";
+        string pdfFilePath = @"C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Temp\BookingReport.pdf";
         public Report(int id)
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace Jetwings
 
             reportViewer1.LocalReport.DataSources.Clear();
             ReportDataSource ds = new ReportDataSource("DataSet1", dt);
-            reportViewer1.LocalReport.ReportPath = @"C:\Users\Bishani Ushara\Documents\dulanjana\new\Jetwings\Jetwings\Jetwings\BookingReport.rdlc";
+            reportViewer1.LocalReport.ReportPath = @"C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\BookingReport.rdlc";
             reportViewer1.LocalReport.DataSources.Add(ds);
             reportViewer1.RefreshReport();
 

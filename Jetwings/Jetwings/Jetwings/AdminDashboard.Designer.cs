@@ -59,6 +59,7 @@
             this.button2.TabIndex = 9;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -71,6 +72,7 @@
             this.button1.TabIndex = 8;
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // guna2Button2
             // 
@@ -258,6 +260,7 @@
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminDashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AdminDashboard";
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);

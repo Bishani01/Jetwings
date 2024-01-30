@@ -42,5 +42,13 @@ namespace Jetwings
             this.Hide();
             book.Show();
         }
+
+        private void linkLabel_VilPackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SigiriyaPackagecs sigiri = new SigiriyaPackagecs();
+            this.Hide();
+            sigiri.Show();
+
+        }
     }
 }

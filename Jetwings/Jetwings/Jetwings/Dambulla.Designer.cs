@@ -34,14 +34,15 @@
             this.btn_BookNow = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel_LakePackages = new System.Windows.Forms.LinkLabel();
             this.panel7 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_login
@@ -54,7 +55,7 @@
             this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(262, 618);
+            this.btn_login.Location = new System.Drawing.Point(264, 654);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(233, 52);
             this.btn_login.TabIndex = 85;
@@ -116,6 +117,44 @@
             this.label1.Text = "JETWING LAKE";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Navy;
+            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1193, 8);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 30);
+            this.button2.TabIndex = 88;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1238, 8);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 30);
+            this.button1.TabIndex = 87;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // linkLabel_LakePackages
+            // 
+            this.linkLabel_LakePackages.AutoSize = true;
+            this.linkLabel_LakePackages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_LakePackages.Location = new System.Drawing.Point(73, 602);
+            this.linkLabel_LakePackages.Name = "linkLabel_LakePackages";
+            this.linkLabel_LakePackages.Size = new System.Drawing.Size(140, 25);
+            this.linkLabel_LakePackages.TabIndex = 99;
+            this.linkLabel_LakePackages.TabStop = true;
+            this.linkLabel_LakePackages.Text = "See Packages";
+            this.linkLabel_LakePackages.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_LakePackages_LinkClicked);
+            // 
             // panel7
             // 
             this.panel7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel7.BackgroundImage")));
@@ -170,39 +209,14 @@
             this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 76;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1077, 8);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 30);
-            this.button2.TabIndex = 88;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1122, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 30);
-            this.button1.TabIndex = 87;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Dambulla
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1193, 787);
+            this.ClientSize = new System.Drawing.Size(1316, 804);
+            this.Controls.Add(this.linkLabel_LakePackages);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel7);
@@ -219,6 +233,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Dambulla";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Dambulla";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -240,5 +255,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel_LakePackages;
     }
 }

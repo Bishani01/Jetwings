@@ -47,5 +47,13 @@ namespace Jetwings
             this.Hide();
             book.Show();
         }
+
+        private void linkLabel_LakePackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            DambullaPackage Dambulla = new DambullaPackage();
+            this.Hide();
+            Dambulla.Show();
+
+        }
     }
 }

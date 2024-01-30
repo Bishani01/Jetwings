@@ -35,13 +35,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel_JaffnaPackages = new System.Windows.Forms.LinkLabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_BackToHome
@@ -98,7 +99,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(41, 251);
+            this.label2.Location = new System.Drawing.Point(41, 194);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(562, 400);
             this.label2.TabIndex = 55;
@@ -121,6 +122,44 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(35, 156);
             this.panel6.TabIndex = 63;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Navy;
+            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1199, 18);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 30);
+            this.button2.TabIndex = 65;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1244, 18);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 30);
+            this.button1.TabIndex = 64;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // linkLabel_JaffnaPackages
+            // 
+            this.linkLabel_JaffnaPackages.AutoSize = true;
+            this.linkLabel_JaffnaPackages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_JaffnaPackages.Location = new System.Drawing.Point(41, 627);
+            this.linkLabel_JaffnaPackages.Name = "linkLabel_JaffnaPackages";
+            this.linkLabel_JaffnaPackages.Size = new System.Drawing.Size(140, 25);
+            this.linkLabel_JaffnaPackages.TabIndex = 99;
+            this.linkLabel_JaffnaPackages.TabStop = true;
+            this.linkLabel_JaffnaPackages.Text = "See Packages";
+            this.linkLabel_JaffnaPackages.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_JaffnaPackages_LinkClicked);
             // 
             // panel5
             // 
@@ -153,9 +192,9 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(704, 268);
+            this.panel2.Location = new System.Drawing.Point(704, 194);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(400, 400);
+            this.panel2.Size = new System.Drawing.Size(489, 457);
             this.panel2.TabIndex = 56;
             // 
             // panel1
@@ -167,39 +206,14 @@
             this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 53;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1095, 38);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 30);
-            this.button2.TabIndex = 65;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1140, 38);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 30);
-            this.button1.TabIndex = 64;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // Jafna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1208, 683);
+            this.ClientSize = new System.Drawing.Size(1316, 804);
+            this.Controls.Add(this.linkLabel_JaffnaPackages);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel6);
@@ -215,6 +229,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Jafna";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Jafna";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -236,5 +251,6 @@
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel_JaffnaPackages;
     }
 }

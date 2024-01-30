@@ -41,5 +41,12 @@ namespace Jetwings
             this.Hide();
             book.Show();
         }
+
+        private void linkLabel_ColomboPackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ColomboPackage colombo = new ColomboPackage();
+            this.Hide();
+            colombo.Show();
+        }
     }
 }

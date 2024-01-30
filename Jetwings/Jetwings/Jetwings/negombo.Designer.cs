@@ -34,13 +34,14 @@
             this.btn_login = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.linkLabel_negamboPackages = new System.Windows.Forms.LinkLabel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btn_backToHome
@@ -87,7 +88,7 @@
             this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(190, 676);
+            this.btn_login.Location = new System.Drawing.Point(199, 680);
             this.btn_login.Name = "btn_login";
             this.btn_login.Size = new System.Drawing.Size(233, 52);
             this.btn_login.TabIndex = 70;
@@ -97,7 +98,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(34, 237);
+            this.label2.Location = new System.Drawing.Point(34, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(563, 425);
             this.label2.TabIndex = 65;
@@ -113,6 +114,44 @@
             this.label1.Size = new System.Drawing.Size(303, 70);
             this.label1.TabIndex = 64;
             this.label1.Text = "JETWING BLUE";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Navy;
+            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1192, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(44, 30);
+            this.button2.TabIndex = 74;
+            this.button2.Text = "-";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Red;
+            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1237, 12);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(44, 30);
+            this.button1.TabIndex = 73;
+            this.button1.Text = "X";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // linkLabel_negamboPackages
+            // 
+            this.linkLabel_negamboPackages.AutoSize = true;
+            this.linkLabel_negamboPackages.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkLabel_negamboPackages.Location = new System.Drawing.Point(34, 641);
+            this.linkLabel_negamboPackages.Name = "linkLabel_negamboPackages";
+            this.linkLabel_negamboPackages.Size = new System.Drawing.Size(140, 25);
+            this.linkLabel_negamboPackages.TabIndex = 99;
+            this.linkLabel_negamboPackages.TabStop = true;
+            this.linkLabel_negamboPackages.Text = "See Packages";
+            this.linkLabel_negamboPackages.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel_negamboPackages_LinkClicked);
             // 
             // panel5
             // 
@@ -145,9 +184,9 @@
             // 
             this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel2.Location = new System.Drawing.Point(697, 254);
+            this.panel2.Location = new System.Drawing.Point(697, 173);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(400, 400);
+            this.panel2.Size = new System.Drawing.Size(506, 444);
             this.panel2.TabIndex = 66;
             // 
             // panel1
@@ -159,39 +198,14 @@
             this.panel1.Size = new System.Drawing.Size(200, 200);
             this.panel1.TabIndex = 63;
             // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.Navy;
-            this.button2.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(1114, 12);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(44, 30);
-            this.button2.TabIndex = 74;
-            this.button2.Text = "-";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Red;
-            this.button1.Font = new System.Drawing.Font("Bebas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1159, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(44, 30);
-            this.button1.TabIndex = 73;
-            this.button1.Text = "X";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // negombo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.LavenderBlush;
-            this.ClientSize = new System.Drawing.Size(1229, 617);
+            this.ClientSize = new System.Drawing.Size(1316, 804);
+            this.Controls.Add(this.linkLabel_negamboPackages);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_backToHome);
@@ -206,6 +220,7 @@
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "negombo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "nigambo";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -226,5 +241,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.LinkLabel linkLabel_negamboPackages;
     }
 }

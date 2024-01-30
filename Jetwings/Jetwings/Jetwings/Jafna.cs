@@ -42,5 +42,12 @@ namespace Jetwings
             this.Hide();
             book.Show();
         }
+
+        private void linkLabel_JaffnaPackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            JaffnaPackage jaffna  = new JaffnaPackage(id);
+            this.Hide();
+            jaffna.Show();
+        }
     }
 }
