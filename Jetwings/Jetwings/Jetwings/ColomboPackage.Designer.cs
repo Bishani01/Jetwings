@@ -141,7 +141,7 @@
             this.btn_BackToHome.Name = "btn_BackToHome";
             this.btn_BackToHome.Size = new System.Drawing.Size(180, 45);
             this.btn_BackToHome.TabIndex = 41;
-            this.btn_BackToHome.Text = "<< BACK TO HOME ";
+            this.btn_BackToHome.Text = "<< BACK ";
             this.btn_BackToHome.Click += new System.EventHandler(this.btn_BackToHome_Click);
             // 
             // button4

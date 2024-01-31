@@ -38,6 +38,7 @@
             // 
             // timer1
             // 
+            this.timer1.Enabled = true;
             this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
@@ -55,9 +56,9 @@
             // progressBar1
             // 
             this.progressBar1.ForeColor = System.Drawing.Color.Black;
-            this.progressBar1.Location = new System.Drawing.Point(417, 462);
+            this.progressBar1.Location = new System.Drawing.Point(2, 685);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(374, 10);
+            this.progressBar1.Size = new System.Drawing.Size(1202, 28);
             this.progressBar1.TabIndex = 1;
             this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click_1);
             // 

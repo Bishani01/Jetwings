@@ -338,3 +338,5 @@ C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\
 C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\obj\Debug\Jetwings.NegamboPackage.resources
 C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\obj\Debug\Jetwings.SigiriyaPackagecs.resources
 C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\obj\Debug\Jetwings.YalaPackages.resources
+C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\obj\Debug\Jetwings.AdminBooking.resources
+C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Jetwings\Jetwings\obj\Debug\Jetwings.adminUserDetails.resources

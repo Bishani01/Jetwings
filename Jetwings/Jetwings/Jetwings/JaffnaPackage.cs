@@ -31,7 +31,7 @@ namespace Jetwings
 
         private void btn_BackToHome_Click(object sender, EventArgs e)
         {
-            hotels H = new hotels(id);
+            Jafna H = new Jafna(id);
             this.Hide();
             H.Show();
         }

@@ -39,8 +39,8 @@ namespace Jetwings
                 while (reader.Read())
                 {
 
-                    txt_FirstName.Text =reader["Cust_FName"].ToString();
-                    txt_LastName.Text = reader["Cust_LName"].ToString() ;
+                    txt_FirstName.Text = reader["Cust_FName"].ToString();
+                    txt_LastName.Text = reader["Cust_LName"].ToString();
                     txt_Email.Text = reader["Cust_Email"].ToString();
                     txt_Address.Text = reader["Cust_Address"].ToString();
 
@@ -105,10 +105,18 @@ namespace Jetwings
         
 private void guna2Button3_Click(object sender, EventArgs e)
         {
-            txt_FirstName.Clear();
-            txt_LastName.Clear();
-            txt_Email.Clear();
-            txt_Address.Clear();
+          //  txt_FirstName.Clear();
+           // txt_LastName.Clear();
+          //  txt_Email.Clear();
+           //  txt_Address.Clear();
+        }
+
+        private void btn_click(object sender, EventArgs e)
+        {
+            home1 home1 = new home1(id);
+            home1.Show();
+            this.Hide();
+
         }
     }
 }

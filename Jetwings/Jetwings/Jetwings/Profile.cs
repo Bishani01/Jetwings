@@ -110,11 +110,14 @@ namespace Jetwings
 
             try
             {
+                
+                SqlCommand cmd = new SqlCommand("DELETE FROM BookingDetails WHERE Cust_ID = '" + lbl_id.Text + "'", con);
                 con.Open();
-
+                cmd.ExecuteNonQuery();
+                con.Close();
                 SqlCommand deleteCmd = new SqlCommand("DELETE FROM CustomerTable WHERE Cust_ID = '"+lbl_id.Text+"'", con);
                 deleteCmd.Parameters.AddWithValue("@Email", userEmail); // assuming userEmail is the user's email stored in the class
-
+                con.Open();
                 int rowsAffected = deleteCmd.ExecuteNonQuery();
 
                

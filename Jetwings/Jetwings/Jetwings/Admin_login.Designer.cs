@@ -141,9 +141,9 @@
             // 
             this.pictureBox2.BackgroundImage = global::Jetwings.Properties.Resources.admin;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(-3, -3);
+            this.pictureBox2.Location = new System.Drawing.Point(-24, -3);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(608, 674);
+            this.pictureBox2.Size = new System.Drawing.Size(629, 695);
             this.pictureBox2.TabIndex = 1;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);

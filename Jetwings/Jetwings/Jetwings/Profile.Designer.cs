@@ -143,7 +143,7 @@
             // 
             this.lbl_LastName.AutoSize = true;
             this.lbl_LastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_LastName.Location = new System.Drawing.Point(622, 273);
+            this.lbl_LastName.Location = new System.Drawing.Point(622, 290);
             this.lbl_LastName.Name = "lbl_LastName";
             this.lbl_LastName.Size = new System.Drawing.Size(106, 25);
             this.lbl_LastName.TabIndex = 2;
@@ -173,7 +173,7 @@
             // 
             this.lbl_Email.AutoSize = true;
             this.lbl_Email.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_Email.Location = new System.Drawing.Point(622, 363);
+            this.lbl_Email.Location = new System.Drawing.Point(622, 367);
             this.lbl_Email.Name = "lbl_Email";
             this.lbl_Email.Size = new System.Drawing.Size(60, 25);
             this.lbl_Email.TabIndex = 2;
@@ -183,7 +183,7 @@
             // 
             this.lbl_FirstName.AutoSize = true;
             this.lbl_FirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_FirstName.Location = new System.Drawing.Point(622, 213);
+            this.lbl_FirstName.Location = new System.Drawing.Point(622, 220);
             this.lbl_FirstName.Name = "lbl_FirstName";
             this.lbl_FirstName.Size = new System.Drawing.Size(111, 25);
             this.lbl_FirstName.TabIndex = 2;
@@ -220,7 +220,7 @@
             this.guna2Panel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2Panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("guna2Panel2.BackgroundImage")));
             this.guna2Panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Panel2.Location = new System.Drawing.Point(399, 77);
+            this.guna2Panel2.Location = new System.Drawing.Point(399, 59);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(46, 50);
             this.guna2Panel2.TabIndex = 3;
@@ -229,7 +229,7 @@
             // 
             this.lbl_01.AutoSize = true;
             this.lbl_01.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_01.Location = new System.Drawing.Point(427, 213);
+            this.lbl_01.Location = new System.Drawing.Point(427, 220);
             this.lbl_01.Name = "lbl_01";
             this.lbl_01.Size = new System.Drawing.Size(125, 29);
             this.lbl_01.TabIndex = 8;
@@ -239,7 +239,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(427, 273);
+            this.label2.Location = new System.Drawing.Point(427, 290);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 29);
             this.label2.TabIndex = 9;
@@ -249,7 +249,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(427, 363);
+            this.label3.Location = new System.Drawing.Point(427, 367);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(74, 29);
             this.label3.TabIndex = 10;
@@ -279,7 +279,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(511, 75);
+            this.label1.Location = new System.Drawing.Point(511, 57);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(246, 52);
             this.label1.TabIndex = 13;

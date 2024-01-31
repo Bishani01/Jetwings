@@ -36,7 +36,6 @@
             this.txt_OTP = new Guna.UI2.WinForms.Guna2TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.chk_remember = new System.Windows.Forms.CheckBox();
             this.cmb_Security = new Guna.UI2.WinForms.Guna2ComboBox();
             this.linkLabel_LogInHere = new System.Windows.Forms.LinkLabel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
@@ -75,7 +74,6 @@
             this.guna2Panel2.Controls.Add(this.txt_OTP);
             this.guna2Panel2.Controls.Add(this.button2);
             this.guna2Panel2.Controls.Add(this.button1);
-            this.guna2Panel2.Controls.Add(this.chk_remember);
             this.guna2Panel2.Controls.Add(this.cmb_Security);
             this.guna2Panel2.Controls.Add(this.linkLabel_LogInHere);
             this.guna2Panel2.Controls.Add(this.guna2Panel3);
@@ -201,16 +199,6 @@
             this.button1.Text = "X";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // chk_remember
-            // 
-            this.chk_remember.AutoSize = true;
-            this.chk_remember.Location = new System.Drawing.Point(346, 793);
-            this.chk_remember.Name = "chk_remember";
-            this.chk_remember.Size = new System.Drawing.Size(125, 20);
-            this.chk_remember.TabIndex = 25;
-            this.chk_remember.Text = "Show Password";
-            this.chk_remember.UseVisualStyleBackColor = true;
             // 
             // cmb_Security
             // 
@@ -627,7 +615,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_Answer;
         private System.Windows.Forms.Label lbl_AnswerSignUP;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.CheckBox chk_remember;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;

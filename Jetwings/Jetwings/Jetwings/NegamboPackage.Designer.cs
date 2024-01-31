@@ -137,11 +137,12 @@
             this.btn_BackToHome.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_BackToHome.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_BackToHome.ForeColor = System.Drawing.Color.White;
-            this.btn_BackToHome.Location = new System.Drawing.Point(945, 750);
+            this.btn_BackToHome.Location = new System.Drawing.Point(945, 701);
             this.btn_BackToHome.Name = "btn_BackToHome";
             this.btn_BackToHome.Size = new System.Drawing.Size(180, 45);
             this.btn_BackToHome.TabIndex = 42;
-            this.btn_BackToHome.Text = "<< BACK TO HOTELS ";
+            this.btn_BackToHome.Text = "<< BACK ";
+            this.btn_BackToHome.Click += new System.EventHandler(this.btn_BackToHome_Click);
             // 
             // button4
             // 

@@ -62,10 +62,15 @@ namespace Jetwings
                 {
                     MessageBox.Show("Please Enter a Valid Email", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                else if (txt_Email.Text.Length == 0)
+                {
+                    MessageBox.Show("Email Cannot Be Blank", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 else if (txt_Address.Text.Length == 0)
                 {
                     MessageBox.Show("Address Cannot Be Blank", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+
                 else if (txt_PWD.Text.Length <= 6)
                 {
                     MessageBox.Show("Pasword Must Be Greater Than 6 Characters", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -176,6 +181,11 @@ namespace Jetwings
             {
                 MessageBox.Show("OTP is Incorrect.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void chk_remember_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }

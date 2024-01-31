@@ -12,9 +12,11 @@ namespace Jetwings
 {
     public partial class SigiriyaPackagecs : Form
     {
-        public SigiriyaPackagecs()
+        private int id;
+        public SigiriyaPackagecs(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void SigiriyaPackagecs_Load(object sender, EventArgs e)
@@ -30,6 +32,13 @@ namespace Jetwings
         private void button4_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_BackToHome_Click(object sender, EventArgs e)
+        {
+            Sigiriya H = new Sigiriya(id);
+            this.Hide();
+            H.Show();
         }
     }
 }

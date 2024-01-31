@@ -114,6 +114,18 @@
     <Compile Include="AdminDashboard.Designer.cs">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminBooking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminBooking.Designer.cs">
+      <DependentUpon>AdminBooking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminUserDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminUserDetails.Designer.cs">
+      <DependentUpon>adminUserDetails.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin_login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +201,11 @@
     </Compile>
     <Compile Include="JaffnaPackage.Designer.cs">
       <DependentUpon>JaffnaPackage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="jetwingsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>jetwingsDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="KandyPackage.cs">
       <SubType>Form</SubType>
@@ -321,6 +338,12 @@
     <EmbeddedResource Include="AdminDashboard.resx">
       <DependentUpon>AdminDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AdminBooking.resx">
+      <DependentUpon>AdminBooking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminUserDetails.resx">
+      <DependentUpon>adminUserDetails.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin_login.resx">
       <DependentUpon>Admin_login.cs</DependentUpon>
     </EmbeddedResource>
@@ -331,6 +354,7 @@
       <DependentUpon>booking.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Bill.rdlc" />
+    <EmbeddedResource Include="bookingDetails.rdlc" />
     <EmbeddedResource Include="colombo.resx">
       <DependentUpon>colombo.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,6 +388,7 @@
     <EmbeddedResource Include="SigiriyaPackagecs.resx">
       <DependentUpon>SigiriyaPackagecs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserReport.rdlc" />
     <EmbeddedResource Include="YalaPackages.resx">
       <DependentUpon>YalaPackages.cs</DependentUpon>
     </EmbeddedResource>
@@ -436,6 +461,17 @@
     </None>
     <None Include="DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="jetwingsDataSet.xsc">
+      <DependentUpon>jetwingsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="jetwingsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>jetwingsDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="jetwingsDataSet.xss">
+      <DependentUpon>jetwingsDataSet.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

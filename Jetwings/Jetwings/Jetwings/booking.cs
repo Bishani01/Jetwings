@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static db;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TreeView;
 
 namespace Jetwings
 {
@@ -17,11 +18,76 @@ namespace Jetwings
     {
         private int userID;
         private string userEmail;
+        private string count;
+        private string branch;
         public booking(int id)
         {
             InitializeComponent();
             this.userID = id;
             userEmail = Get.email;
+            LoadDataIntoComboBox();
+        }
+        private void roomCount()
+        {
+
+            int avlble = Int32.Parse(count);
+            int booked = Int32.Parse(textBox1.Text);
+
+            if (avlble < booked)
+            {
+                MessageBox.Show("Only Available Room Count is " + count, "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                int count = avlble - booked;
+            }
+        }
+        private void showMessge()
+        {
+            if (count == "0")
+            {
+                MessageBox.Show("All " + cmb_package.Text + " Rooms are booked", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cmb_package.Text = "";
+            }
+        }
+
+        private void LoadDataIntoComboBox()
+        {
+
+
+
+            SqlConnection con = dbConnection.GetSqlConnection();
+
+            SqlCommand cmd = new SqlCommand("SELECT Hotel_Name FROM hotels ", con);
+
+            con.Open();
+
+            try
+            {
+                SqlDataReader reader = cmd.ExecuteReader();
+
+
+                cmb_HotelBranch.Items.Clear();
+
+
+                while (reader.Read())
+                {
+
+                    cmb_HotelBranch.Items.Add(reader["Hotel_Name"].ToString());
+
+
+                }
+
+
+                reader.Close();
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Error: " + ex.Message);
+            }
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -49,7 +115,22 @@ namespace Jetwings
 
                 if (cmb_HotelBranch.SelectedIndex == 0)
                 {
+                    if (textBox1.Text == "" )
+                    {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if(txt_Adults.Text =="")
+                    {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else if (txt_Child.Text == "")
+                    {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
 
+
+
+                else { 
                     // Maximum guests for each package
                     int standardMaxAdults = 2;
                     int standardMaxChildren = 1;
@@ -71,7 +152,6 @@ namespace Jetwings
                     // Perform calculation and validation based on selected package and dates
                     decimal totalPrice = 0;
                     string errorMessage = "";
-
                     switch (selectedPackage)
                     {
                         case "Standard":
@@ -132,9 +212,27 @@ namespace Jetwings
                             errorMessage = "Invalid package selection.";
                             break;
                     }
+                }
 
                 }
                 else if (cmb_HotelBranch.SelectedIndex == 1)
+                {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Adults.Text == "")
+                {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Child.Text == "")
+                {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+                else
                 {
 
                     // Maximum guests for each package
@@ -218,9 +316,27 @@ namespace Jetwings
                             errorMessage = "Invalid package selection.";
                             break;
                     }
+                }
 
                 }
                 if (cmb_HotelBranch.SelectedIndex == 2)
+                {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Adults.Text == "")
+                {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Child.Text == "")
+                {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+                else
                 {
 
                     // Maximum guests for each package
@@ -304,9 +420,27 @@ namespace Jetwings
                             errorMessage = "Invalid package selection.";
                             break;
                     }
+                    }
 
                 }
                 if (cmb_HotelBranch.SelectedIndex == 3)
+                {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Adults.Text == "")
+                {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Child.Text == "")
+                {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+                else
                 {
 
                     // Maximum guests for each package
@@ -390,9 +524,27 @@ namespace Jetwings
                             errorMessage = "Invalid package selection.";
                             break;
                     }
+                    }
 
                 }
                 if (cmb_HotelBranch.SelectedIndex == 4)
+                {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Adults.Text == "")
+                {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Child.Text == "")
+                {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+                else
                 {
 
                     // Maximum guests for each package
@@ -476,9 +628,27 @@ namespace Jetwings
                             errorMessage = "Invalid package selection.";
                             break;
                     }
+                    }
 
                 }
                 if (cmb_HotelBranch.SelectedIndex == 5)
+                {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Adults.Text == "")
+                {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Child.Text == "")
+                {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+                else
                 {
 
                     // Maximum guests for each package
@@ -562,9 +732,27 @@ namespace Jetwings
                             errorMessage = "Invalid package selection.";
                             break;
                     }
+                    }
 
                 }
                 if (cmb_HotelBranch.SelectedIndex == 5)
+                {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Adults.Text == "")
+                {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Child.Text == "")
+                {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+                else
                 {
 
                     // Maximum guests for each package
@@ -648,9 +836,27 @@ namespace Jetwings
                             errorMessage = "Invalid package selection.";
                             break;
                     }
+                    }
 
                 }
                 if (cmb_HotelBranch.SelectedIndex == 6)
+                {
+                if (textBox1.Text == "")
+                {
+                    MessageBox.Show("Number of Rooms cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Adults.Text == "")
+                {
+                    MessageBox.Show("Number of Adults cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (txt_Child.Text == "")
+                {
+                    MessageBox.Show("Number of Childs cannot be Empty", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+
+
+
+                else
                 {
 
                     // Maximum guests for each package
@@ -701,7 +907,7 @@ namespace Jetwings
                                 if (duration.TotalDays >= 0)
                                 {
                                     totalPrice = (decimal)(60000 * duration.TotalDays);
-                                   label_Total.Text = totalPrice.ToString("F2");
+                                    label_Total.Text = totalPrice.ToString("F2");
                                 }
                                 else
                                 {
@@ -733,6 +939,7 @@ namespace Jetwings
                         default:
                             errorMessage = "Invalid package selection.";
                             break;
+                    }
                     }
 
                 }
@@ -783,9 +990,78 @@ namespace Jetwings
                     bill.Show();
 
                     
-                }
+                    }
                
             
+        }
+
+        private void booking_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmb_package_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = dbConnection.GetSqlConnection();
+
+            SqlCommand cmd = new SqlCommand("SELECT Premium_room_count,Standard_room_count,Classic_room_count FROM hotels WHERE Hotel_Name='" + branch + "'  ", con);
+
+            con.Open();
+
+            SqlDataReader reader = cmd.ExecuteReader();
+
+            if (cmb_package.Text == "Standard")
+            {
+                
+
+
+                while (reader.Read())
+                {
+
+                   count = reader["Standard_room_count"].ToString();
+                }
+
+
+                reader.Close();
+
+            }
+
+            else if (cmb_package.Text == "Classic")
+            {
+                
+
+
+                while (reader.Read())
+                {
+
+                    count = reader["Classic_room_count"].ToString();
+                }
+
+
+                reader.Close();
+
+            }
+            else if (cmb_package.Text == "Premium")
+            {
+                
+
+
+                while (reader.Read())
+                {
+
+                    count = reader["Premium_room_count"].ToString();
+                }
+
+
+                reader.Close();
+
+            }
+            showMessge();
+        }
+
+        private void cmb_HotelBranch_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            branch = cmb_HotelBranch.SelectedItem?.ToString();
         }
     }
     }

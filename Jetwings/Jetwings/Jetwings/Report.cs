@@ -54,6 +54,7 @@ namespace Jetwings
         {
 
             this.reportViewer1.RefreshReport();
+            
         }
 
         private void btn_login_Click(object sender, EventArgs e)

@@ -41,5 +41,30 @@ namespace Jetwings
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminBooking adminReport = new AdminBooking();
+            adminReport.Show();
+        }
+
+        private void guna2Button3_Click(object sender, EventArgs e)
+        {
+            adminUserDetails adminUserDetails = new adminUserDetails();
+            adminUserDetails.Show();
+        }
+
+        private void guna2CircleButton1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Button4_Click(object sender, EventArgs e)
+        {
+            Admin_login a = new Admin_login();
+            a.Show();   
+            this.Close();
+        }
     }
 }

@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(negombo));
             this.btn_backToHome = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_login = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_GetDirection = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -78,21 +78,22 @@
             this.guna2Button1.Text = "BOOK NOW >>";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // btn_login
+            // btn_GetDirection
             // 
-            this.btn_login.BorderRadius = 6;
-            this.btn_login.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(199, 680);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(233, 52);
-            this.btn_login.TabIndex = 70;
-            this.btn_login.Text = "Get Directions >>";
+            this.btn_GetDirection.BorderRadius = 6;
+            this.btn_GetDirection.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GetDirection.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GetDirection.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_GetDirection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_GetDirection.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_GetDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btn_GetDirection.ForeColor = System.Drawing.Color.White;
+            this.btn_GetDirection.Location = new System.Drawing.Point(199, 680);
+            this.btn_GetDirection.Name = "btn_GetDirection";
+            this.btn_GetDirection.Size = new System.Drawing.Size(233, 52);
+            this.btn_GetDirection.TabIndex = 70;
+            this.btn_GetDirection.Text = "Get Directions >>";
+            this.btn_GetDirection.Click += new System.EventHandler(this.btn_GetDirection_Click);
             // 
             // label2
             // 
@@ -210,7 +211,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_backToHome);
             this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.btn_GetDirection);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -231,7 +232,7 @@
 
         private Guna.UI2.WinForms.Guna2Button btn_backToHome;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button btn_login;
+        private Guna.UI2.WinForms.Guna2Button btn_GetDirection;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;

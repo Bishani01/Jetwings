@@ -103,6 +103,7 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 200);
             this.panel3.TabIndex = 20;
+            this.panel3.Click += new System.EventHandler(this.btn_click);
             // 
             // label2
             // 
@@ -153,6 +154,7 @@
             this.guna2Button1.Size = new System.Drawing.Size(211, 52);
             this.guna2Button1.TabIndex = 33;
             this.guna2Button1.Text = "Cancel";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btn_SignUp
             // 

@@ -259,6 +259,7 @@
             this.cmb_package.Name = "cmb_package";
             this.cmb_package.Size = new System.Drawing.Size(223, 36);
             this.cmb_package.TabIndex = 22;
+            this.cmb_package.SelectedIndexChanged += new System.EventHandler(this.cmb_package_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -281,18 +282,11 @@
             this.cmb_HotelBranch.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.cmb_HotelBranch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
             this.cmb_HotelBranch.ItemHeight = 30;
-            this.cmb_HotelBranch.Items.AddRange(new object[] {
-            "Jetwing Colombo Seven",
-            "Jetwing Kandy Gallery",
-            "Jetwing Jaffna",
-            "Jetwing Blue",
-            "Jetwing Vil Uyana",
-            "Jetwing Yala",
-            "Jetwing Lake Dambulla"});
             this.cmb_HotelBranch.Location = new System.Drawing.Point(489, 210);
             this.cmb_HotelBranch.Name = "cmb_HotelBranch";
             this.cmb_HotelBranch.Size = new System.Drawing.Size(474, 36);
             this.cmb_HotelBranch.TabIndex = 20;
+            this.cmb_HotelBranch.SelectedIndexChanged += new System.EventHandler(this.cmb_HotelBranch_SelectedIndexChanged);
             // 
             // lbl_Adalts
             // 
@@ -319,7 +313,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Poppins", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(658, 501);
+            this.label8.Location = new System.Drawing.Point(652, 501);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(162, 31);
             this.label8.TabIndex = 40;
@@ -328,9 +322,9 @@
             // txt_Child
             // 
             this.txt_Child.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Child.Location = new System.Drawing.Point(831, 505);
+            this.txt_Child.Location = new System.Drawing.Point(830, 505);
             this.txt_Child.Name = "txt_Child";
-            this.txt_Child.Size = new System.Drawing.Size(223, 27);
+            this.txt_Child.Size = new System.Drawing.Size(224, 27);
             this.txt_Child.TabIndex = 39;
             // 
             // label_Total
@@ -376,6 +370,7 @@
             this.Name = "booking";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "booking";
+            this.Load += new System.EventHandler(this.booking_Load);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -20,7 +20,7 @@ namespace Jetwings
         private int id;
         private int bookinid;
         private string userEmail;
-        string pdfFilePath = @"C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Temp\BookingReport.pdf";
+        string pdfFilePath = @"C:\Users\Bishani Ushara\Documents\dulanjana\Jetwings\Jetwings\Temp\Bill.pdf";
         public Bill(int bookingid,int id,string email)
         {
             InitializeComponent();
@@ -63,7 +63,9 @@ namespace Jetwings
 
             MailMessage mailMessage = new MailMessage("jetwingsbooking@outlook.com", "bishaniusharapersonal@gmail.com");
             mailMessage.Subject = "Verification";
-            mailMessage.Body = $"<p>Dear Sir/Madam,</p><br><p>Bill</p>";
+            mailMessage.Body = $"<p>Dear Sir/Madam,</p><br><p>This is your Bill</p>";
+            Attachment attachment = new Attachment(pdfFilePath);
+            mailMessage.Attachments.Add(attachment);
             mailMessage.IsBodyHtml = true;
             client.Send(mailMessage);
 
@@ -73,12 +75,23 @@ namespace Jetwings
         {
 
             this.reportViewer1.RefreshReport();
+            
         }
 
         private void btn_back_Click(object sender, EventArgs e)
         {
             
             this.Close();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void reportViewer1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

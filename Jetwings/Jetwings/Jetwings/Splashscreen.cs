@@ -40,14 +40,17 @@ namespace Jetwings
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value < 100)
+            progressBar1.Value += 1;
+
+            if (progressBar1.Value >= 100)
             {
-                progressBar1.Value += 1;
-            }
-            else
-            {
+               
                 timer1.Stop();
+                LoginNew loginNew = new LoginNew();
+                loginNew.Show();
+                this.Hide();
             }
+            
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {

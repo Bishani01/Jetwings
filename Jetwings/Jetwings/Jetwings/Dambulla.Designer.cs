@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dambulla));
-            this.btn_login = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_GetDirection = new Guna.UI2.WinForms.Guna2Button();
             this.btn_BackToHome = new Guna.UI2.WinForms.Guna2Button();
             this.btn_BookNow = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,21 +45,22 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // btn_login
+            // btn_GetDirection
             // 
-            this.btn_login.BorderRadius = 6;
-            this.btn_login.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(264, 654);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(233, 52);
-            this.btn_login.TabIndex = 85;
-            this.btn_login.Text = "Get Directions >>";
+            this.btn_GetDirection.BorderRadius = 6;
+            this.btn_GetDirection.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GetDirection.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GetDirection.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_GetDirection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_GetDirection.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_GetDirection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btn_GetDirection.ForeColor = System.Drawing.Color.White;
+            this.btn_GetDirection.Location = new System.Drawing.Point(264, 654);
+            this.btn_GetDirection.Name = "btn_GetDirection";
+            this.btn_GetDirection.Size = new System.Drawing.Size(233, 52);
+            this.btn_GetDirection.TabIndex = 85;
+            this.btn_GetDirection.Text = "Get Directions >>";
+            this.btn_GetDirection.Click += new System.EventHandler(this.btn_GetDirection_Click);
             // 
             // btn_BackToHome
             // 
@@ -220,7 +221,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.panel7);
-            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.btn_GetDirection);
             this.Controls.Add(this.btn_BackToHome);
             this.Controls.Add(this.btn_BookNow);
             this.Controls.Add(this.panel5);
@@ -243,7 +244,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel7;
-        private Guna.UI2.WinForms.Guna2Button btn_login;
+        private Guna.UI2.WinForms.Guna2Button btn_GetDirection;
         private Guna.UI2.WinForms.Guna2Button btn_BackToHome;
         private Guna.UI2.WinForms.Guna2Button btn_BookNow;
         private System.Windows.Forms.Panel panel5;

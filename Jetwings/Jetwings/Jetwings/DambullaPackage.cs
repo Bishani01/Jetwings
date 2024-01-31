@@ -10,11 +10,14 @@ using System.Windows.Forms;
 
 namespace Jetwings
 {
+   
     public partial class DambullaPackage : Form
     {
-        public DambullaPackage()
+        private int id;
+        public DambullaPackage(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -29,7 +32,9 @@ namespace Jetwings
 
         private void btn_BackToHome_Click(object sender, EventArgs e)
         {
-            
+            Dambulla H = new Dambulla(id);
+            this.Hide();
+            H.Show();
         }
     }
 }

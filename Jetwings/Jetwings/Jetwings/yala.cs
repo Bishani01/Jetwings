@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -45,7 +46,7 @@ namespace Jetwings
 
         private void linkLabel_seePackages_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            YalaPackages Yala  = new YalaPackages();
+            YalaPackages Yala  = new YalaPackages(id);
             this.Hide();
             Yala.Show();
         }
@@ -72,7 +73,11 @@ namespace Jetwings
 
         private void btn_login_Click(object sender, EventArgs e)
         {
+            // Specify the URL you want to open
+            string url = "https://www.google.com/maps/place/Jetwing+Yala/@6.2506417,81.393197,17z/data=!4m10!3m9!1s0x3ae68477e6d79f69:0x9124ee613ef930c4!5m3!1s2024-05-01!4m1!1i2!8m2!3d6.2506364!4d81.3957719!16s%2Fg%2F11btm80dfm?entry=ttu";
 
+            // Use Process.Start to open the URL in the default web browser
+            Process.Start(url);
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

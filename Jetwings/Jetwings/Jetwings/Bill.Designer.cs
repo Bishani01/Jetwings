@@ -39,6 +39,7 @@
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(894, 521);
             this.reportViewer1.TabIndex = 0;
+            this.reportViewer1.Load += new System.EventHandler(this.reportViewer1_Load);
             // 
             // btn_back
             // 
@@ -50,7 +51,7 @@
             this.btn_back.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_back.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_back.ForeColor = System.Drawing.Color.White;
-            this.btn_back.Location = new System.Drawing.Point(339, 538);
+            this.btn_back.Location = new System.Drawing.Point(698, 534);
             this.btn_back.Name = "btn_back";
             this.btn_back.Size = new System.Drawing.Size(180, 45);
             this.btn_back.TabIndex = 32;

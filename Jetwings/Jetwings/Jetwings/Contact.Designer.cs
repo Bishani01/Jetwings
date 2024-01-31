@@ -45,7 +45,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(288, 523);
+            this.guna2Panel1.Size = new System.Drawing.Size(288, 632);
             this.guna2Panel1.TabIndex = 2;
             // 
             // panel3
@@ -107,7 +107,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1235, 523);
+            this.ClientSize = new System.Drawing.Size(1209, 632);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.guna2HtmlLabel1);
@@ -115,6 +115,7 @@
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Contact";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Contact";
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);

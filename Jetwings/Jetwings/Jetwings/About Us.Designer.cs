@@ -46,7 +46,7 @@
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(288, 549);
+            this.guna2Panel1.Size = new System.Drawing.Size(288, 567);
             this.guna2Panel1.TabIndex = 1;
             // 
             // panel3
@@ -118,7 +118,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1253, 570);
+            this.ClientSize = new System.Drawing.Size(1253, 588);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);

@@ -34,7 +34,7 @@
             this.btn_BookNow = new Guna.UI2.WinForms.Guna2Button();
             this.panel6 = new System.Windows.Forms.Panel();
             this.btn_BackToHome = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_login = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_GetDirections = new Guna.UI2.WinForms.Guna2Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -108,21 +108,22 @@
             this.btn_BackToHome.Text = "<< BACK TO HOME ";
             this.btn_BackToHome.Click += new System.EventHandler(this.btn_BackToHome_Click);
             // 
-            // btn_login
+            // btn_GetDirections
             // 
-            this.btn_login.BorderRadius = 6;
-            this.btn_login.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btn_login.ForeColor = System.Drawing.Color.White;
-            this.btn_login.Location = new System.Drawing.Point(235, 578);
-            this.btn_login.Name = "btn_login";
-            this.btn_login.Size = new System.Drawing.Size(233, 52);
-            this.btn_login.TabIndex = 41;
-            this.btn_login.Text = "Get Directions >>";
+            this.btn_GetDirections.BorderRadius = 6;
+            this.btn_GetDirections.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GetDirections.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_GetDirections.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_GetDirections.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_GetDirections.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_GetDirections.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btn_GetDirections.ForeColor = System.Drawing.Color.White;
+            this.btn_GetDirections.Location = new System.Drawing.Point(235, 578);
+            this.btn_GetDirections.Name = "btn_GetDirections";
+            this.btn_GetDirections.Size = new System.Drawing.Size(233, 52);
+            this.btn_GetDirections.TabIndex = 41;
+            this.btn_GetDirections.Text = "Get Directions >>";
+            this.btn_GetDirections.Click += new System.EventHandler(this.btn_GetDirections_Click);
             // 
             // button2
             // 
@@ -217,7 +218,7 @@
             this.Controls.Add(this.linkLabel_ColomboPackages);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.btn_login);
+            this.Controls.Add(this.btn_GetDirections);
             this.Controls.Add(this.btn_BackToHome);
             this.Controls.Add(this.btn_BookNow);
             this.Controls.Add(this.panel6);
@@ -249,7 +250,7 @@
         private Guna.UI2.WinForms.Guna2Button btn_BookNow;
         private System.Windows.Forms.Panel panel6;
         private Guna.UI2.WinForms.Guna2Button btn_BackToHome;
-        private Guna.UI2.WinForms.Guna2Button btn_login;
+        private Guna.UI2.WinForms.Guna2Button btn_GetDirections;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.LinkLabel linkLabel_ColomboPackages;

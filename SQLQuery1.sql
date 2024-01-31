@@ -64,3 +64,4 @@ INSERT INTO hotels VALUES('Jetwing Vil Uyana',5,5,5)
 INSERT INTO hotels VALUES('Jetwing Blue',5,5,5)
 INSERT INTO hotels VALUES('Jetwing Yala',5,5,5)
 INSERT INTO hotels VALUES('Jetwing Lake Dambulla',5,5,5)
+

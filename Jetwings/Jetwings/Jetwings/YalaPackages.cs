@@ -12,9 +12,11 @@ namespace Jetwings
 {
     public partial class YalaPackages : Form
     {
-        public YalaPackages()
+        private int id;
+        public YalaPackages(int id)
         {
             InitializeComponent();
+            this.id = id;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -30,6 +32,13 @@ namespace Jetwings
         private void button4_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btn_BackToHome_Click(object sender, EventArgs e)
+        {
+            yala H = new yala(id);
+            this.Hide();
+            H.Show();
         }
     }
 }

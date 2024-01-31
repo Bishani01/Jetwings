@@ -81,11 +81,6 @@ namespace Jetwings
             profile.Show();
         }
 
-        private void btn_profile_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -98,16 +93,37 @@ namespace Jetwings
 
         }
 
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-           
-        }
-
         private void guna2CircleButton1_Click(object sender, EventArgs e)
         {
             LoginNew loginNew = new LoginNew();
             this.Close();
             loginNew.Show();
+        }
+
+        private void btn_profile_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ConcatcUs_btn_click(object sender, EventArgs e)
+        {
+            Contact C = new Contact();
+            this.Hide();
+            C.Show();
+        }
+
+        private void btn_ContactUs_print(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        
+
+        private void btn_modi_click(object sender, EventArgs e)
+        {
+              About_Us about = new About_Us();
+            about.Show();
+            this.Hide();
         }
     }
 }
